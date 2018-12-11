@@ -1,5 +1,8 @@
 # FlexibleSteppedProgressBar
 
+## forked from [amratab/FlexibleSteppedProgressBar](https://github.com/amratab/FlexibleSteppedProgressBar) 
+## 🐞 Fixed error in Swift 4.2 🐞
+
 [![CI Status](https://travis-ci.org/amratab/FlexibleSteppedProgressBar.svg?branch=master)](https://travis-ci.org/amratab/FlexibleSteppedProgressBar)
 [![Swift][swift-badge]][swift-url]
 [![Version](https://img.shields.io/cocoapods/v/FlexibleSteppedProgressBar.svg?style=flat)](http://cocoapods.org/pods/FlexibleSteppedProgressBar)
