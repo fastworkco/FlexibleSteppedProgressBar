@@ -67,6 +67,7 @@ import CoreGraphics
     open var lastStateCenterColor: UIColor!
     open var centerLayerTextColor: UIColor!
     open var centerLayerDarkBackgroundTextColor: UIColor = UIColor.white
+    open var isChangeLastStateTextColor: Bool = false
     
     open var useLastState: Bool = false {
         didSet {
@@ -477,8 +478,9 @@ import CoreGraphics
             textLayer.font = stepTextFont
             textLayer.fontSize = (stepTextFont?.pointSize)!
             
+            let condition = (isChangeLastStateTextColor) ? (i <= currentIndex) : (i == currentIndex)
             
-            if i == currentIndex {
+            if condition {
                 textLayer.foregroundColor = currentSelectedTextColor.cgColor
             } else {
                 textLayer.foregroundColor = stepTextColor!.cgColor
@@ -509,7 +511,9 @@ import CoreGraphics
             textLayer.font = stepTextFont
             textLayer.fontSize = (stepTextFont?.pointSize)!
             
-            if i == currentIndex {
+            let condition = (isChangeLastStateTextColor) ? (i <= currentIndex) : (i == currentIndex)
+            
+            if condition {
                 textLayer.foregroundColor = currentSelectedTextColor.cgColor
             } else {
                 textLayer.foregroundColor = stepTextColor!.cgColor
