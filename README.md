@@ -111,6 +111,7 @@ I made some modifications upon ABSteppedProgressBar because I had an extra state
         a) lastStateCenterColor: for inner circle fill color
         b) lastStateOuterCircleStrokeColor: for outer circle stroke color
         c) lastStateOuterCircleLineWidth: for outer circle line width
+        d) isChangeLastStateTextColor: for change last state text color.
 
     Some general customisation options: 
     a) radius: Radius of circles for unvisited indices.
